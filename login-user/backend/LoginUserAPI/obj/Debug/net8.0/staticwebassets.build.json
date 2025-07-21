@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "btgKbe2QwP65jHzjrIYMbqYt2Eg2rTtw73VnzY7CIrc=",
+  "Source": "LoginUserAPI",
+  "BasePath": "_content/LoginUserAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
