@@ -91,7 +91,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// Remove HTTPS redirection for development to avoid redirect errors
+// app.UseHttpsRedirection(); // <-- Commented out to fix HTTPS redirect error
 
 app.UseCors("AllowReactApp");
 
