@@ -20,7 +20,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const API_BASE_URL = 'http://localhost:5000/api/simpleauth';
+const API_BASE_URL = 'http://localhost:5000/api/auth';
 
 export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
@@ -28,58 +28,58 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [error, setError] = useState<string | null>(null);
 
   const login = async (email: string, password: string) => {
+    setLoading(true);
+    setError(null);
     try {
-      setLoading(true);
-      setError(null);
       const response = await axios.post(`${API_BASE_URL}/login`, {
         email,
         password,
       });
-      
       setUser(response.data.user);
-    } catch (error: any) {
-      setError(error.response?.data?.message || 'Login failed');
-      throw error;
+    } catch (err: any) {
+      const errorMessage = err.response?.data?.message || 'Login failed';
+      setError(errorMessage);
+      throw new Error(errorMessage);
     } finally {
       setLoading(false);
     }
   };
 
   const register = async (email: string, password: string, firstName: string, lastName: string) => {
+    setLoading(true);
+    setError(null);
     try {
-      setLoading(true);
-      setError(null);
       const response = await axios.post(`${API_BASE_URL}/register`, {
         email,
         password,
         firstName,
         lastName,
       });
-      
       setUser(response.data.user);
-    } catch (error: any) {
-      setError(error.response?.data?.message || 'Registration failed');
-      throw error;
+    } catch (err: any) {
+      const errorMessage = err.response?.data?.message || 'Registration failed';
+      setError(errorMessage);
+      throw new Error(errorMessage);
     } finally {
       setLoading(false);
     }
   };
 
   const updateProfile = async (firstName: string, lastName: string) => {
+    if (!user) return;
+    
+    setLoading(true);
+    setError(null);
     try {
-      setLoading(true);
-      setError(null);
-      if (!user) throw new Error('No user logged in');
-      
       const response = await axios.put(`${API_BASE_URL}/profile/${user.id}`, {
         firstName,
         lastName,
       });
-      
       setUser(response.data.user);
-    } catch (error: any) {
-      setError(error.response?.data?.message || 'Profile update failed');
-      throw error;
+    } catch (err: any) {
+      const errorMessage = err.response?.data?.message || 'Profile update failed';
+      setError(errorMessage);
+      throw new Error(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -87,25 +87,28 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const logout = () => {
     setUser(null);
+    setError(null);
   };
 
-  const value = {
-    user,
-    login,
-    register,
-    logout,
-    updateProfile,
-    loading,
-    error,
-  };
-
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={{
+      user,
+      login,
+      register,
+      logout,
+      updateProfile,
+      loading,
+      error,
+    }}>
+      {children}
+    </AuthContext.Provider>
+  );
 };
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (context === undefined) {
-    throw new Error('useAuth must be used within a AuthProvider');
+    throw new Error('useAuth must be used within an AuthProvider');
   }
   return context;
 };
