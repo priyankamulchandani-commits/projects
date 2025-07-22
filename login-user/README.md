@@ -158,3 +158,47 @@ login-user/
 ## License
 
 This project is open source and available under the MIT License.
+## 🔄 Simple Authentication Version (No JWT, No Hashing)
+
+This project also includes a simplified version without JWT tokens and password hashing for learning purposes.
+
+### Simple Version Features
+
+- ✅ **No JWT tokens** - Direct user object storage
+- ✅ **No password hashing** - Plain text passwords  
+- ✅ **In-memory storage** - Data resets on restart
+- ✅ **Simple API endpoints** - Easy to understand
+- ✅ **Same UI/UX** - Consistent user experience
+
+### Simple API Endpoints
+
+- `POST /api/simpleauth/register` - Register user (plain text password)
+- `POST /api/simpleauth/login` - Login user (plain text comparison)
+- `GET /api/simpleauth/users` - Get all users (for testing)
+- `PUT /api/simpleauth/profile/{id}` - Update user profile
+
+### How to Use Simple Version
+
+1. **Backend**: The `SimpleAuthController.cs` is already included
+2. **Frontend**: Use the simple components:
+   - Replace `AuthContext` with `SimpleAuthContext`
+   - Use `App-Simple.tsx` instead of `App.tsx`
+   - Components: `SimpleLogin.tsx`, `SimpleRegister.tsx`, `SimpleProfile.tsx`
+
+### Switch to Simple Version
+
+```bash
+# In frontend directory
+cp src/App-Simple.tsx src/App.tsx
+# Then restart the React app
+```
+
+### ⚠️ Important Notes for Simple Version
+
+- **Not for production** - No security features
+- **Data not persistent** - Resets on server restart  
+- **Plain text passwords** - Visible to anyone with access
+- **No authentication tokens** - Basic session management
+
+This simple version is perfect for learning, prototyping, or demonstrations where security isn't a concern!
+

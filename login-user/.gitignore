@@ -1,0 +1,44 @@
+# .NET Core
+backend/LoginUserAPI/bin/
+backend/LoginUserAPI/obj/
+backend/LoginUserAPI/out/
+backend/LoginUserAPI/.vs/
+backend/LoginUserAPI/*.user
+backend/LoginUserAPI/*.suo
+backend/LoginUserAPI/*.cache
+backend/LoginUserAPI/*.docstates
+backend/LoginUserAPI/[Dd]ebug/
+backend/LoginUserAPI/[Rr]elease/
+
+# React / Node.js
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
