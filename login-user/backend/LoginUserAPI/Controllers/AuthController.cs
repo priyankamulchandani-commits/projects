@@ -6,44 +6,76 @@ namespace LoginUserAPI.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
+        private readonly ILogger<AuthController> _logger;
+
         // In-memory storage (resets when app restarts)
         private static List<User> _users = new List<User>();
         private static int _nextId = 1;
 
+        public AuthController(ILogger<AuthController> logger)
+        {
+            _logger = logger;
+        }
+
         [HttpPost("register")]
         public ActionResult Register([FromBody] RegisterRequest request)
         {
-            if (string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+            try
             {
-                return BadRequest(new { message = "Email and password are required" });
+                _logger.LogInformation("Registration attempt for email: {Email}", request?.Email ?? "null");
+
+                if (request == null)
+                {
+                    _logger.LogWarning("Registration request is null");
+                    return BadRequest(new { message = "Invalid request data" });
+                }
+
+                if (string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+                {
+                    _logger.LogWarning("Registration failed: Missing email or password");
+                    return BadRequest(new { message = "Email and password are required" });
+                }
+
+                if (string.IsNullOrEmpty(request.FirstName) || string.IsNullOrEmpty(request.LastName))
+                {
+                    _logger.LogWarning("Registration failed: Missing first name or last name");
+                    return BadRequest(new { message = "First name and last name are required" });
+                }
+
+                // Check if user already exists
+                if (_users.Any(u => u.Email.ToLower() == request.Email.ToLower()))
+                {
+                    _logger.LogWarning("Registration failed: User already exists with email {Email}", request.Email);
+                    return BadRequest(new { message = "User with this email already exists" });
+                }
+
+                var user = new User
+                {
+                    Id = _nextId++,
+                    Email = request.Email,
+                    Password = request.Password, // Plain text for simplicity
+                    FirstName = request.FirstName,
+                    LastName = request.LastName
+                };
+
+                _users.Add(user);
+                _logger.LogInformation("User registered successfully with ID: {UserId}", user.Id);
+
+                var response = new UserResponse
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName
+                };
+
+                return Ok(new { message = "User registered successfully", user = response });
             }
-
-            // Check if user already exists
-            if (_users.Any(u => u.Email.ToLower() == request.Email.ToLower()))
+            catch (Exception ex)
             {
-                return BadRequest(new { message = "User with this email already exists" });
+                _logger.LogError(ex, "Error during user registration");
+                return StatusCode(500, new { message = "Internal server error during registration" });
             }
-
-            var user = new User
-            {
-                Id = _nextId++,
-                Email = request.Email,
-                Password = request.Password, // Plain text for simplicity
-                FirstName = request.FirstName,
-                LastName = request.LastName
-            };
-
-            _users.Add(user);
-
-            var response = new UserResponse
-            {
-                Id = user.Id,
-                Email = user.Email,
-                FirstName = user.FirstName,
-                LastName = user.LastName
-            };
-
-            return Ok(new { message = "User registered successfully", user = response });
         }
 
         [HttpPost("login")]
@@ -112,6 +144,18 @@ namespace LoginUserAPI.Controllers
             };
 
             return Ok(new { message = "Profile updated successfully", user = response });
+        }
+
+        // Add a health check endpoint
+        [HttpGet("health")]
+        public ActionResult HealthCheck()
+        {
+            return Ok(new { 
+                status = "healthy", 
+                timestamp = DateTime.UtcNow,
+                userCount = _users.Count,
+                message = "AuthController is running properly"
+            });
         }
     }
 
