@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import './Auth.css';
 
-const SimpleRegister: React.FC = () => {
+const Register: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [firstName, setFirstName] = useState('');
@@ -27,7 +27,7 @@ const SimpleRegister: React.FC = () => {
       <div className="auth-card">
         <div className="auth-header">
           <h1>Create Account</h1>
-          <p>Simple Registration - No Complexity!</p>
+          <p>Join us today and get started</p>
         </div>
         
         <form onSubmit={handleSubmit} className="auth-form">
@@ -101,4 +101,4 @@ const SimpleRegister: React.FC = () => {
   );
 };
 
-export default SimpleRegister;
+export default Register;

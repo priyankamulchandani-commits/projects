@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import './Profile.css';
 
-const SimpleProfile: React.FC = () => {
+const Profile: React.FC = () => {
   const { user, updateProfile, logout, loading, error } = useAuth();
   const [isEditing, setIsEditing] = useState(false);
   const [firstName, setFirstName] = useState(user?.firstName || '');
@@ -40,7 +40,7 @@ const SimpleProfile: React.FC = () => {
           <div className="profile-info">
             <h1>{user.firstName} {user.lastName}</h1>
             <p className="profile-email">{user.email}</p>
-            <p className="profile-date">Simple Auth - No JWT!</p>
+            <p className="profile-date">User Profile</p>
           </div>
           <button onClick={logout} className="logout-button">
             Logout
@@ -132,4 +132,4 @@ const SimpleProfile: React.FC = () => {
   );
 };
 
-export default SimpleProfile;
+export default Profile;

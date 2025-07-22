@@ -1,27 +1,27 @@
-# Simple Login User Application
+# Login User Application
 
-A straightforward full-stack authentication application built with .NET 8 Web API backend and React TypeScript frontend. This application provides simple user authentication functionality including login, signup, and profile management without JWT tokens or password hashing complexity.
+A clean full-stack authentication application built with .NET 8 Web API backend and React TypeScript frontend. This application provides user authentication functionality including login, signup, and profile management with educational focus.
 
 ## Features
 
 - **User Registration**: Create new user accounts with email, password, and personal information
-- **User Login**: Simple authentication with plain text passwords
+- **User Login**: Authentication with plain text passwords (educational purposes)
 - **Profile Management**: View and edit user profile information
 - **Protected Routes**: Route protection based on authentication status
 - **Context API**: React Context for global authentication state management
 - **Modern UI**: Beautiful and responsive design with CSS animations
-- **In-Memory Storage**: Simple data storage (resets on restart)
-- **No Complexity**: No JWT tokens, no password hashing - perfect for learning!
+- **In-Memory Storage**: Data storage (resets on restart - perfect for learning)
+- **Educational Focus**: Clean code structure for learning authentication concepts
 
 ## Technology Stack
 
 ### Backend (.NET 8 Web API)
 - ASP.NET Core 8.0
 - Entity Framework Core (In-Memory Database)
-- Simple authentication (no JWT)
-- Plain text passwords (no hashing)
+- Plain text authentication (educational)
 - CORS middleware
 - RESTful API design
+- Swagger documentation
 
 ### Frontend (React TypeScript)
 - React 18 with TypeScript
@@ -38,7 +38,7 @@ login-user/
 ├── backend/
 │   └── LoginUserAPI/
 │       ├── Controllers/
-│       │   └── SimpleAuthController.cs
+│       │   └── AuthController.cs
 │       ├── Data/
 │       │   └── AppDbContext.cs
 │       ├── Models/
@@ -48,17 +48,18 @@ login-user/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── SimpleLogin.tsx
-│   │   │   ├── SimpleRegister.tsx
-│   │   │   ├── SimpleProfile.tsx
-│   │   │   ├── SimpleProtectedRoute.tsx
+│   │   │   ├── Login.tsx
+│   │   │   ├── Register.tsx
+│   │   │   ├── Profile.tsx
+│   │   │   ├── ProtectedRoute.tsx
 │   │   │   ├── Auth.css
 │   │   │   └── Profile.css
 │   │   ├── contexts/
-│   │   │   └── SimpleAuthContext.tsx
+│   │   │   └── AuthContext.tsx
 │   │   ├── App.tsx
 │   │   └── App.css
 │   └── package.json
+├── start-app.sh
 └── README.md
 ```
 
@@ -66,10 +67,10 @@ login-user/
 
 ### Authentication Endpoints
 
-- `POST /api/simpleauth/register` - Register a new user
-- `POST /api/simpleauth/login` - Login user
-- `GET /api/simpleauth/users` - Get all users (for testing)
-- `PUT /api/simpleauth/profile/{id}` - Update user profile
+- `POST /api/auth/register` - Register a new user
+- `POST /api/auth/login` - Login user
+- `GET /api/auth/users` - Get all users (for testing)
+- `PUT /api/auth/profile/{id}` - Update user profile
 
 ## Getting Started
 
@@ -79,11 +80,23 @@ login-user/
 - Node.js (v18 or later)
 - npm or yarn
 
-### Backend Setup
+### Quick Start
+
+Use the startup script for easy development:
+
+```bash
+./start-app.sh
+```
+
+This will start both backend and frontend servers automatically.
+
+### Manual Setup
+
+#### Backend Setup
 
 1. Navigate to the backend directory:
    ```bash
-   cd login-user/backend/LoginUserAPI
+   cd backend/LoginUserAPI
    ```
 
 2. Restore dependencies:
@@ -98,11 +111,11 @@ login-user/
 
    The API will be available at `http://localhost:5000`
 
-### Frontend Setup
+#### Frontend Setup
 
 1. Navigate to the frontend directory:
    ```bash
-   cd login-user/frontend
+   cd frontend
    ```
 
 2. Install dependencies:
@@ -126,46 +139,72 @@ login-user/
 
 ## Authentication Flow
 
-1. User registers or logs in with plain text credentials
-2. Backend stores user data in memory (no encryption)
+1. User registers or logs in with credentials
+2. Backend stores user data in memory (no encryption - educational purposes)
 3. Frontend stores user object in context state
 4. Protected routes check for user presence in context
 5. Logout clears the user from context state
 
-## ⚠️ Important Notes
+## API Testing
 
-- **Not for production use** - This is a learning/demonstration application
-- **No password security** - Passwords are stored in plain text
+Test the API endpoints using curl:
+
+```bash
+# Register a user
+curl -X POST http://localhost:5000/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"email":"test@example.com","password":"password123","firstName":"John","lastName":"Doe"}'
+
+# Login
+curl -X POST http://localhost:5000/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"test@example.com","password":"password123"}'
+
+# Get all users
+curl http://localhost:5000/api/auth/users
+```
+
+## ⚠️ Educational Notes
+
+This application is designed for learning purposes:
+- **Not for production use** - No password encryption
 - **In-memory storage** - All data resets when the server restarts
 - **No session persistence** - Authentication state is lost on page refresh
-- **No input validation** - Minimal validation for simplicity
+- **Minimal validation** - Focus on core authentication concepts
+- **No security features** - Plain text passwords for educational clarity
 
-## Why Simple?
+## Perfect For
 
-This application is designed for:
-- **Learning purposes** - Understanding authentication concepts without complexity
-- **Rapid prototyping** - Quick setup for testing ideas
-- **Educational demos** - Teaching authentication flows
-- **Development practice** - Focus on frontend/backend integration
+- **Learning authentication concepts** without complexity
+- **Understanding React Context API** usage
+- **Full-stack development practice** with .NET and React
+- **API development** and testing
+- **Educational demonstrations** of authentication flows
 
-## Security Features (Intentionally Missing)
+## Development Features
 
-For educational purposes, this app does NOT include:
-- Password hashing (BCrypt, etc.)
-- JWT token authentication
-- Session management
-- Input sanitization
-- HTTPS enforcement
-- Rate limiting
-- Password complexity requirements
+- **Hot reload** - Both frontend and backend support hot reload
+- **Swagger documentation** - Available at http://localhost:5000/swagger
+- **CORS configured** - Frontend can communicate with backend
+- **Error handling** - Proper error messages and validation
+- **TypeScript support** - Full type safety in frontend
 
-## Development Notes
+## Troubleshooting
 
-- Uses Entity Framework In-Memory database
-- All user data is lost when the server restarts
-- API responses include full user objects
-- No authentication middleware required
-- CORS is configured for localhost:3000
+### Connection Issues
+- Ensure both servers are running on correct ports
+- Check if ports 3000 and 5000 are available
+- Use the startup script for automatic setup
+
+### Build Issues
+- Run `dotnet restore` in backend directory
+- Run `npm install` in frontend directory
+- Ensure .NET 8 SDK and Node.js are installed
+
+### API Issues
+- Check server logs at `backend/LoginUserAPI/server.log`
+- Test API endpoints with curl
+- Verify CORS configuration
 
 ## License
 
@@ -173,4 +212,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-**Perfect for learning authentication concepts without the complexity of production-level security!** 🎓
+**Perfect for learning authentication concepts with modern technologies!** 🎓
