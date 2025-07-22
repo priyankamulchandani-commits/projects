@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="98b75eab-5b75-4e47-b216-432f6658dbca" name="@cursor 2025-07-22 11:40:34" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-22T11:40:34.8636139+00:00" queuing="2025-07-22T11:40:34.8636140+00:00" start="2025-07-22T11:40:34.0749104+00:00" finish="2025-07-22T11:40:35.4709842+00:00" />
+  <TestSettings name="default" id="e31e9cb5-360e-44b6-8865-44da6712d4bb">
+    <Deployment runDeploymentRoot="_cursor_2025-07-22_11_40_34" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="651209d2-7e21-4768-a43c-abbd74546045" testId="f724b0dc-c183-2b88-55f6-508d2d012eb6" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.Register_DuplicateEmail_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0020112" startTime="2025-07-22T11:40:35.2158808+00:00" endTime="2025-07-22T11:40:35.2158809+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="651209d2-7e21-4768-a43c-abbd74546045" />
+    <UnitTestResult executionId="22941ce1-739b-43ea-9350-fcd6381785ec" testId="efd2b5e5-d353-3b18-0d16-f0335af8c7c7" testName="LoginUserAPI.Tests.AuthControllerTests.Login_EmptyPassword_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0001271" startTime="2025-07-22T11:40:34.8815137+00:00" endTime="2025-07-22T11:40:34.8815138+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22941ce1-739b-43ea-9350-fcd6381785ec" />
+    <UnitTestResult executionId="1bfb0ebd-e2ad-468a-b21a-b43326fd7d49" testId="06ac2f45-63f5-136e-d4fc-ea226b4e3571" testName="LoginUserAPI.Tests.ModelTests.User_SetProperties_WorksCorrectly" computerName="cursor" duration="00:00:00.0000722" startTime="2025-07-22T11:40:34.8435084+00:00" endTime="2025-07-22T11:40:34.8435085+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bfb0ebd-e2ad-468a-b21a-b43326fd7d49" />
+    <UnitTestResult executionId="766b2167-390b-4e70-8d72-bd0a0d354e22" testId="bfdfdae4-9e7b-1cdd-7c44-748eb4c93efe" testName="LoginUserAPI.Tests.AuthControllerTests.Login_NullRequest_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0000761" startTime="2025-07-22T11:40:34.8799105+00:00" endTime="2025-07-22T11:40:34.8799105+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="766b2167-390b-4e70-8d72-bd0a0d354e22" />
+    <UnitTestResult executionId="fc2cd9a2-043d-4900-812c-f539f1edfa77" testId="60a2d821-d4f3-cc77-9b14-6af4a2ebe6e9" testName="LoginUserAPI.Tests.AuthControllerTests.Login_NonExistentUser_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0001463" startTime="2025-07-22T11:40:34.8784589+00:00" endTime="2025-07-22T11:40:34.8784589+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc2cd9a2-043d-4900-812c-f539f1edfa77" />
+    <UnitTestResult executionId="d58ee70c-740d-4d37-a9e9-13d17e4f51bc" testId="4ec23aab-966d-d71d-bc28-0f4db9b39fb0" testName="LoginUserAPI.Tests.ModelTests.RegisterRequest_SetProperties_WorksCorrectly" computerName="cursor" duration="00:00:00.0001299" startTime="2025-07-22T11:40:34.8422038+00:00" endTime="2025-07-22T11:40:34.8422039+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d58ee70c-740d-4d37-a9e9-13d17e4f51bc" />
+    <UnitTestResult executionId="ea65a532-1055-40e6-babc-55afcad717b5" testId="fc74a278-a618-0a6d-a674-b5f0646c8c01" testName="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_SetProperties_WorksCorrectly" computerName="cursor" duration="00:00:00.0001919" startTime="2025-07-22T11:40:34.8172866+00:00" endTime="2025-07-22T11:40:34.8172866+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea65a532-1055-40e6-babc-55afcad717b5" />
+    <UnitTestResult executionId="31ed6aed-91b7-49e9-8ae9-f76017550897" testId="731bf6dc-2ae4-6fbc-a209-9a4e188d7d3e" testName="LoginUserAPI.Tests.AuthControllerTests.Register_EmptyEmail_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0001168" startTime="2025-07-22T11:40:34.8806463+00:00" endTime="2025-07-22T11:40:34.8806464+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31ed6aed-91b7-49e9-8ae9-f76017550897" />
+    <UnitTestResult executionId="eeeaafdb-1011-46a4-a24c-e982e04be16d" testId="55fe5cd8-4ba4-8ca0-0fde-c411856fd3af" testName="LoginUserAPI.Tests.ModelTests.LoginRequest_SetProperties_WorksCorrectly" computerName="cursor" duration="00:00:00.0000431" startTime="2025-07-22T11:40:34.8443680+00:00" endTime="2025-07-22T11:40:34.8443681+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eeeaafdb-1011-46a4-a24c-e982e04be16d" />
+    <UnitTestResult executionId="297d45f6-a218-4404-838b-c3ab91218e4f" testId="6c20981b-8fb1-04a9-7ce4-3a3dc2dddcd3" testName="LoginUserAPI.Tests.AuthControllerTests.HealthCheck_ReturnsOkResult" computerName="cursor" duration="00:00:00.0003437" startTime="2025-07-22T11:40:34.8779185+00:00" endTime="2025-07-22T11:40:34.8779186+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="297d45f6-a218-4404-838b-c3ab91218e4f" />
+    <UnitTestResult executionId="d401619e-5db9-49c4-a53c-0348e066d0be" testId="fcf249cf-8213-8b30-bde7-4cc90e6b3381" testName="LoginUserAPI.Tests.AuthControllerTests.GetAllUsers_EmptyList_ReturnsEmptyArray" computerName="cursor" duration="00:00:00.0011125" startTime="2025-07-22T11:40:34.8761790+00:00" endTime="2025-07-22T11:40:34.8761791+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d401619e-5db9-49c4-a53c-0348e066d0be" />
+    <UnitTestResult executionId="eb9e15e3-a6ef-4477-bab7-f3d926dd2933" testId="ebf53b28-2450-64ad-c356-5c3a121a3472" testName="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_VariousInputs_WorksCorrectly(firstName: &quot;John&quot;, lastName: &quot;Doe&quot;)" computerName="cursor" duration="00:00:00.0000119" startTime="2025-07-22T11:40:34.8417792+00:00" endTime="2025-07-22T11:40:34.8417793+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb9e15e3-a6ef-4477-bab7-f3d926dd2933" />
+    <UnitTestResult executionId="dcc3e773-d376-431b-80ab-b7929124d03a" testId="1f683a02-93a5-10e9-6675-a8aa61f55434" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.Register_InvalidRequest_ReturnsBadRequest" computerName="cursor" duration="00:00:00.3967499" startTime="2025-07-22T11:40:35.1866036+00:00" endTime="2025-07-22T11:40:35.1866038+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcc3e773-d376-431b-80ab-b7929124d03a" />
+    <UnitTestResult executionId="6a47fe9e-ca2f-4073-b45e-5cae6fbd7c22" testId="34bafbc7-fb19-a710-13da-e691742ae730" testName="LoginUserAPI.Tests.AuthControllerTests.Register_EmptyFirstName_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0001292" startTime="2025-07-22T11:40:34.8812854+00:00" endTime="2025-07-22T11:40:34.8812854+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a47fe9e-ca2f-4073-b45e-5cae6fbd7c22" />
+    <UnitTestResult executionId="2e1010c6-a76f-48df-88bd-da7f08913ea7" testId="8d977e16-e184-3e4b-22d7-880ff7648c1d" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.Login_InvalidCredentials_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0013442" startTime="2025-07-22T11:40:35.2229764+00:00" endTime="2025-07-22T11:40:35.2229765+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e1010c6-a76f-48df-88bd-da7f08913ea7" />
+    <UnitTestResult executionId="87530e8d-741b-403b-a45a-db7a55d40b44" testId="db1d10cb-c9e6-92bf-5440-b3b3a02863f7" testName="LoginUserAPI.Tests.AuthControllerTests.Register_EmptyPassword_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0001346" startTime="2025-07-22T11:40:34.8794241+00:00" endTime="2025-07-22T11:40:34.8794242+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87530e8d-741b-403b-a45a-db7a55d40b44" />
+    <UnitTestResult executionId="6a488075-aca2-43c5-8708-2eff60d992e1" testId="24afb46c-5541-bab3-6fdd-f38b4e3eec9a" testName="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_DefaultValues_AreCorrect" computerName="cursor" duration="00:00:00.0000451" startTime="2025-07-22T11:40:34.8403550+00:00" endTime="2025-07-22T11:40:34.8403551+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a488075-aca2-43c5-8708-2eff60d992e1" />
+    <UnitTestResult executionId="59d2db36-42a1-440c-9df8-45bb58bbf487" testId="946dd1cb-e0f0-962e-49f1-5c166d4adb96" testName="LoginUserAPI.Tests.ModelTests.LoginRequest_VariousInputs_WorksCorrectly(email: &quot;admin@company.net&quot;, password: &quot;admin123&quot;)" computerName="cursor" duration="00:00:00.0001154" startTime="2025-07-22T11:40:34.8177712+00:00" endTime="2025-07-22T11:40:34.8177713+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59d2db36-42a1-440c-9df8-45bb58bbf487" />
+    <UnitTestResult executionId="d1aaa040-dbf7-43fd-a284-eca936aa1e21" testId="7ff60b14-e3d4-22d7-b372-b2d8f1bc9eb4" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.UpdateProfile_ValidRequest_ReturnsSuccess" computerName="cursor" duration="00:00:00.0045408" startTime="2025-07-22T11:40:35.2136069+00:00" endTime="2025-07-22T11:40:35.2136070+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1aaa040-dbf7-43fd-a284-eca936aa1e21" />
+    <UnitTestResult executionId="4d31a0dd-949d-45f3-a6b1-0dd22acc8982" testId="4c43baae-c7b2-9881-fac5-87acbdbfed7b" testName="LoginUserAPI.Tests.AuthControllerTests.HealthCheck_ReturnsCorrectUserCount" computerName="cursor" duration="00:00:00.0002230" startTime="2025-07-22T11:40:34.8817787+00:00" endTime="2025-07-22T11:40:34.8817787+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d31a0dd-949d-45f3-a6b1-0dd22acc8982" />
+    <UnitTestResult executionId="c6293c19-74b7-475a-80b8-af0e65316fd5" testId="3a1dfe00-d838-a884-471f-9e95e7a3df10" testName="LoginUserAPI.Tests.ModelTests.User_DefaultValues_AreCorrect" computerName="cursor" duration="00:00:00.0002972" startTime="2025-07-22T11:40:34.8170412+00:00" endTime="2025-07-22T11:40:34.8170413+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6293c19-74b7-475a-80b8-af0e65316fd5" />
+    <UnitTestResult executionId="737d5840-d1e9-4c15-a254-db0b31182ad5" testId="103c1350-5726-a946-1007-ceaa5d533d13" testName="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_VariousInputs_WorksCorrectly(firstName: &quot;Jane&quot;, lastName: &quot;Smith&quot;)" computerName="cursor" duration="00:00:00.0000877" startTime="2025-07-22T11:40:34.8415518+00:00" endTime="2025-07-22T11:40:34.8415518+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="737d5840-d1e9-4c15-a254-db0b31182ad5" />
+    <UnitTestResult executionId="6f511e84-3076-4715-9056-d906c4a78662" testId="c2f89f0e-6426-9e39-7c55-983fe9b4f66f" testName="LoginUserAPI.Tests.ModelTests.RegisterRequest_VariousInputs_WorksCorrectly(email: &quot;admin@company.net&quot;, password: &quot;admin123&quot;, firstName: &quot;Admin&quot;, lastName: &quot;User&quot;)" computerName="cursor" duration="00:00:00.0003365" startTime="2025-07-22T11:40:34.8406763+00:00" endTime="2025-07-22T11:40:34.8406763+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f511e84-3076-4715-9056-d906c4a78662" />
+    <UnitTestResult executionId="f2982009-8099-4111-a46c-4c60cf2e52a6" testId="2550cc29-7ac7-4cd6-1bb9-d8eeddac3e22" testName="LoginUserAPI.Tests.ModelTests.RegisterRequest_VariousInputs_WorksCorrectly(email: &quot;test@example.com&quot;, password: &quot;password123&quot;, firstName: &quot;John&quot;, lastName: &quot;Doe&quot;)" computerName="cursor" duration="00:00:00.0001770" startTime="2025-07-22T11:40:34.8408752+00:00" endTime="2025-07-22T11:40:34.8408752+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2982009-8099-4111-a46c-4c60cf2e52a6" />
+    <UnitTestResult executionId="5fc1a9b9-0c29-4884-b0e5-f6c140a40d77" testId="2772ac65-d708-a34c-3f7b-79c5ed321ca3" testName="LoginUserAPI.Tests.ModelTests.UserResponse_SetProperties_WorksCorrectly" computerName="cursor" duration="00:00:00.0000864" startTime="2025-07-22T11:40:34.8419892+00:00" endTime="2025-07-22T11:40:34.8419892+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5fc1a9b9-0c29-4884-b0e5-f6c140a40d77" />
+    <UnitTestResult executionId="c3b88925-5dae-43b7-bcb5-9c8aa7e6dbe7" testId="122d19cc-3ca1-eb3f-9f6c-8dd278c27616" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.HealthCheck_ReturnsSuccess" computerName="cursor" duration="00:00:00.0116093" startTime="2025-07-22T11:40:35.1988546+00:00" endTime="2025-07-22T11:40:35.1988547+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3b88925-5dae-43b7-bcb5-9c8aa7e6dbe7" />
+    <UnitTestResult executionId="2389479d-84b5-4787-8fd7-24b27aed66f6" testId="9aeab9da-e652-434f-d148-2e93f662d855" testName="LoginUserAPI.Tests.ModelTests.LoginRequest_VariousInputs_WorksCorrectly(email: &quot;test@example.com&quot;, password: &quot;password123&quot;)" computerName="cursor" duration="00:00:00.0001234" startTime="2025-07-22T11:40:34.8175522+00:00" endTime="2025-07-22T11:40:34.8175523+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2389479d-84b5-4787-8fd7-24b27aed66f6" />
+    <UnitTestResult executionId="d01a243b-cfdb-4ed9-9312-d47fd64de787" testId="3dfa2ae3-b559-2604-c84f-6f4008b379d7" testName="LoginUserAPI.Tests.AuthControllerTests.Register_ValidRequest_ReturnsOkResult" computerName="cursor" duration="00:00:00.0003506" startTime="2025-07-22T11:40:34.8765868+00:00" endTime="2025-07-22T11:40:34.8765869+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d01a243b-cfdb-4ed9-9312-d47fd64de787" />
+    <UnitTestResult executionId="d5080dd7-1518-4c83-b81c-1ad50d132276" testId="7a8d0a09-3cbb-1169-56b3-d6cf4dcbfa86" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.UpdateProfile_NonExistentUser_ReturnsNotFound" computerName="cursor" duration="00:00:00.0061902" startTime="2025-07-22T11:40:35.2052698+00:00" endTime="2025-07-22T11:40:35.2052699+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5080dd7-1518-4c83-b81c-1ad50d132276" />
+    <UnitTestResult executionId="fe6850bf-bcfb-4b9b-af02-0ebd8c9f4856" testId="15a180c4-9b96-5181-adb3-242c4afc51d8" testName="LoginUserAPI.Tests.AuthControllerTests.Login_CaseInsensitiveEmail_ReturnsOkResult" computerName="cursor" duration="00:00:00.0025706" startTime="2025-07-22T11:40:34.8743501+00:00" endTime="2025-07-22T11:40:34.8743502+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe6850bf-bcfb-4b9b-af02-0ebd8c9f4856" />
+    <UnitTestResult executionId="8594f236-5b93-4769-aefa-71249b00d857" testId="2afddba3-2be7-b882-fb42-c5bea2f6a55b" testName="LoginUserAPI.Tests.AuthControllerTests.Login_ValidCredentials_ReturnsOkResult" computerName="cursor" duration="00:00:00.0001494" startTime="2025-07-22T11:40:34.8803916+00:00" endTime="2025-07-22T11:40:34.8803917+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8594f236-5b93-4769-aefa-71249b00d857" />
+    <UnitTestResult executionId="f3a20aef-f0c0-4428-945c-15ee179a1490" testId="c9501e7c-44b5-cdc3-2216-0670e2ff49d9" testName="LoginUserAPI.Tests.AuthControllerTests.Register_DuplicateEmailCaseInsensitive_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0005907" startTime="2025-07-22T11:40:34.8748334+00:00" endTime="2025-07-22T11:40:34.8748335+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3a20aef-f0c0-4428-945c-15ee179a1490" />
+    <UnitTestResult executionId="bd1b4245-25c2-4bf8-a671-c4f3bec76997" testId="9f4a22b0-e53d-af5d-ce9f-302cb266e81f" testName="LoginUserAPI.Tests.AuthControllerTests.UpdateProfile_NullRequest_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0001340" startTime="2025-07-22T11:40:34.8810669+00:00" endTime="2025-07-22T11:40:34.8810670+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd1b4245-25c2-4bf8-a671-c4f3bec76997" />
+    <UnitTestResult executionId="00b654c0-62b0-4fce-ac81-386599bc3532" testId="050789db-d758-acd6-21f9-a71b1eb7a5f2" testName="LoginUserAPI.Tests.ModelTests.RegisterRequest_VariousInputs_WorksCorrectly(email: &quot;user@domain.org&quot;, password: &quot;secret&quot;, firstName: &quot;Jane&quot;, lastName: &quot;Smith&quot;)" computerName="cursor" duration="00:00:00.0000041" startTime="2025-07-22T11:40:34.8410735+00:00" endTime="2025-07-22T11:40:34.8410736+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00b654c0-62b0-4fce-ac81-386599bc3532" />
+    <UnitTestResult executionId="66dc9a69-8b19-4e74-8961-cdc203264fd9" testId="0ebc68e4-1c08-c265-c29c-d7f19e0e5c2d" testName="LoginUserAPI.Tests.AuthControllerTests.Register_DuplicateEmail_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0002536" startTime="2025-07-22T11:40:34.8772593+00:00" endTime="2025-07-22T11:40:34.8772594+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66dc9a69-8b19-4e74-8961-cdc203264fd9" />
+    <UnitTestResult executionId="9b215376-20d7-4459-850a-a0e5ea4c351e" testId="b93153ab-798b-fed9-906e-7dad852e5b86" testName="LoginUserAPI.Tests.ModelTests.RegisterRequest_DefaultValues_AreCorrect" computerName="cursor" duration="00:00:00.0000631" startTime="2025-07-22T11:40:34.8441143+00:00" endTime="2025-07-22T11:40:34.8441144+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b215376-20d7-4459-850a-a0e5ea4c351e" />
+    <UnitTestResult executionId="9e741aba-3b6c-441a-b08f-2798baff949a" testId="25d41cb2-ad66-4c07-a13d-35ff1b341037" testName="LoginUserAPI.Tests.AuthControllerTests.Register_NullRequest_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0000766" startTime="2025-07-22T11:40:34.8787023+00:00" endTime="2025-07-22T11:40:34.8787023+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e741aba-3b6c-441a-b08f-2798baff949a" />
+    <UnitTestResult executionId="744d3f38-3d6f-4048-8ad1-74ff1d50dbc7" testId="104fcd3c-dbc8-6fa1-7bb0-50e9e6565be4" testName="LoginUserAPI.Tests.AuthControllerTests.UpdateProfile_ValidRequest_ReturnsOkResult" computerName="cursor" duration="00:00:00.0007367" startTime="2025-07-22T11:40:34.8775487+00:00" endTime="2025-07-22T11:40:34.8775488+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="744d3f38-3d6f-4048-8ad1-74ff1d50dbc7" />
+    <UnitTestResult executionId="e03bb114-16f3-4b59-88fc-2c2ea90f2c3a" testId="a2ac3000-3496-c154-6505-37d5bfe315d0" testName="LoginUserAPI.Tests.ModelTests.UserResponse_DefaultValues_AreCorrect" computerName="cursor" duration="00:00:00.0000681" startTime="2025-07-22T11:40:34.8438440+00:00" endTime="2025-07-22T11:40:34.8438441+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e03bb114-16f3-4b59-88fc-2c2ea90f2c3a" />
+    <UnitTestResult executionId="8318ade3-5319-459b-a99a-dd33c2a3a5ea" testId="eefae636-e025-842b-f4db-ce0fe24c7228" testName="LoginUserAPI.Tests.ModelTests.UserResponse_FromUser_MapsCorrectly" computerName="cursor" duration="00:00:00.0029069" startTime="2025-07-22T11:40:34.8162567+00:00" endTime="2025-07-22T11:40:34.8162568+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8318ade3-5319-459b-a99a-dd33c2a3a5ea" />
+    <UnitTestResult executionId="a517f982-e44e-451e-a9f1-1a73d5066b2e" testId="65886fe9-0728-377c-0972-70840b879cc0" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.Register_ValidRequest_ReturnsSuccess" computerName="cursor" duration="00:00:00.0012765" startTime="2025-07-22T11:40:35.2170880+00:00" endTime="2025-07-22T11:40:35.2170881+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a517f982-e44e-451e-a9f1-1a73d5066b2e" />
+    <UnitTestResult executionId="fa9d4155-e7ae-439d-8ba7-802c38d29ee3" testId="fe4576a3-20d2-804f-90d1-c3216283f4cc" testName="LoginUserAPI.Tests.ModelTests.LoginRequest_DefaultValues_AreCorrect" computerName="cursor" duration="00:00:00.0038837" startTime="2025-07-22T11:40:34.8085041+00:00" endTime="2025-07-22T11:40:34.8085398+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa9d4155-e7ae-439d-8ba7-802c38d29ee3" />
+    <UnitTestResult executionId="34b07b25-2955-45f3-82dc-1b63abbe4851" testId="8543fd21-3aa9-4dd0-70c5-1a6d62268c55" testName="LoginUserAPI.Tests.AuthControllerTests.Login_EmptyEmail_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0001427" startTime="2025-07-22T11:40:34.8801707+00:00" endTime="2025-07-22T11:40:34.8801707+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34b07b25-2955-45f3-82dc-1b63abbe4851" />
+    <UnitTestResult executionId="cd24bfd1-904c-4474-a6e7-7339e75b769c" testId="cd0c4b77-d167-435c-70ed-cb32bc90a837" testName="LoginUserAPI.Tests.AuthControllerTests.UpdateProfile_EmptyFirstName_UpdatesOnlyLastName" computerName="cursor" duration="00:00:00.0004126" startTime="2025-07-22T11:40:34.8789636+00:00" endTime="2025-07-22T11:40:34.8789637+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd24bfd1-904c-4474-a6e7-7339e75b769c" />
+    <UnitTestResult executionId="faffeb33-1b7b-4372-9451-3b7923dceb99" testId="8a9c6e33-bbb6-595b-4c75-4bf777155dc0" testName="LoginUserAPI.Tests.AuthControllerTests.Register_MultipleUsers_AssignsIncrementalIds" computerName="cursor" duration="00:00:00.0002231" startTime="2025-07-22T11:40:34.8822753+00:00" endTime="2025-07-22T11:40:34.8822753+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="faffeb33-1b7b-4372-9451-3b7923dceb99" />
+    <UnitTestResult executionId="edb2ae4d-d189-4d3b-8ca5-e34f45115559" testId="26a6b848-2677-c45a-d9ce-54c24095405c" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.Login_ValidCredentials_ReturnsSuccess" computerName="cursor" duration="00:00:00.0043365" startTime="2025-07-22T11:40:35.2215354+00:00" endTime="2025-07-22T11:40:35.2215355+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edb2ae4d-d189-4d3b-8ca5-e34f45115559" />
+    <UnitTestResult executionId="93010a3b-bbea-4bcd-9975-2540057d6fe7" testId="0b8755a0-d4b6-2c4e-afba-943b8094fc2c" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.GetAllUsers_ReturnsSuccess" computerName="cursor" duration="00:00:00.0037957" startTime="2025-07-22T11:40:35.2089974+00:00" endTime="2025-07-22T11:40:35.2089975+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93010a3b-bbea-4bcd-9975-2540057d6fe7" />
+    <UnitTestResult executionId="c1e46d05-3f86-4edb-9fb0-f073b0b92de9" testId="ec831a30-3189-2ccf-8a0f-32ece83e924e" testName="LoginUserAPI.Tests.AuthControllerTests.Register_EmptyLastName_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0002059" startTime="2025-07-22T11:40:34.8792216+00:00" endTime="2025-07-22T11:40:34.8792216+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1e46d05-3f86-4edb-9fb0-f073b0b92de9" />
+    <UnitTestResult executionId="e52903a0-7660-40de-8e9e-f9c6d3c6379a" testId="67978293-2af4-9ff3-6a6e-c0d6ba419049" testName="LoginUserAPI.Tests.AuthControllerTests.Login_InvalidCredentials_ReturnsBadRequest" computerName="cursor" duration="00:00:00.0001843" startTime="2025-07-22T11:40:34.8781975+00:00" endTime="2025-07-22T11:40:34.8781975+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e52903a0-7660-40de-8e9e-f9c6d3c6379a" />
+    <UnitTestResult executionId="df6240c6-f026-4fec-b447-b7b08ed07184" testId="a1221ca2-1b8f-f11a-4614-b47fd795039a" testName="LoginUserAPI.Tests.AuthControllerTests.GetAllUsers_WithUsers_ReturnsUserList" computerName="cursor" duration="00:00:00.0830036" startTime="2025-07-22T11:40:34.8716702+00:00" endTime="2025-07-22T11:40:34.8716704+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df6240c6-f026-4fec-b447-b7b08ed07184" />
+    <UnitTestResult executionId="0b646c34-918e-4a55-9bbe-e32d76addc90" testId="b7ff0544-5833-9bd0-40f7-a262c043b00e" testName="LoginUserAPI.Tests.AuthControllerIntegrationTests.EndToEndUserFlow_RegisterLoginUpdateProfile_Success" computerName="cursor" duration="00:00:00.0025412" startTime="2025-07-22T11:40:35.2256166+00:00" endTime="2025-07-22T11:40:35.2256166+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b646c34-918e-4a55-9bbe-e32d76addc90" />
+    <UnitTestResult executionId="f16f3d24-2e12-4728-a022-893d6d7444a6" testId="d65bd58f-977e-c4ce-6077-c2d3655d3245" testName="LoginUserAPI.Tests.ModelTests.LoginRequest_VariousInputs_WorksCorrectly(email: &quot;user@domain.org&quot;, password: &quot;secret&quot;)" computerName="cursor" duration="00:00:00.0000035" startTime="2025-07-22T11:40:34.8179754+00:00" endTime="2025-07-22T11:40:34.8179755+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f16f3d24-2e12-4728-a022-893d6d7444a6" />
+    <UnitTestResult executionId="4a28aad4-8d0d-44f7-9ebd-ed06e4bb8d73" testId="b5768c06-b155-b4e8-6e93-81c1bcb733d6" testName="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_VariousInputs_WorksCorrectly(firstName: &quot;Admin&quot;, lastName: &quot;User&quot;)" computerName="cursor" duration="00:00:00.0000656" startTime="2025-07-22T11:40:34.8413185+00:00" endTime="2025-07-22T11:40:34.8413185+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a28aad4-8d0d-44f7-9ebd-ed06e4bb8d73" />
+    <UnitTestResult executionId="8e5b508a-b17f-45b5-bcd7-1d95f61edd6c" testId="7c1b97f7-5270-f61f-4dad-087bd577c06f" testName="LoginUserAPI.Tests.AuthControllerTests.UpdateProfile_NonExistentUser_ReturnsNotFound" computerName="cursor" duration="00:00:00.0001533" startTime="2025-07-22T11:40:34.8808655+00:00" endTime="2025-07-22T11:40:34.8808656+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e5b508a-b17f-45b5-bcd7-1d95f61edd6c" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.GetAllUsers_ReturnsSuccess" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="0b8755a0-d4b6-2c4e-afba-943b8094fc2c">
+      <Execution id="93010a3b-bbea-4bcd-9975-2540057d6fe7" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="GetAllUsers_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.GetAllUsers_WithUsers_ReturnsUserList" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="a1221ca2-1b8f-f11a-4614-b47fd795039a">
+      <Execution id="df6240c6-f026-4fec-b447-b7b08ed07184" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="GetAllUsers_WithUsers_ReturnsUserList" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Login_EmptyPassword_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="efd2b5e5-d353-3b18-0d16-f0335af8c7c7">
+      <Execution id="22941ce1-739b-43ea-9350-fcd6381785ec" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Login_EmptyPassword_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.LoginRequest_SetProperties_WorksCorrectly" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="55fe5cd8-4ba4-8ca0-0fde-c411856fd3af">
+      <Execution id="eeeaafdb-1011-46a4-a24c-e982e04be16d" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="LoginRequest_SetProperties_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Login_CaseInsensitiveEmail_ReturnsOkResult" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="15a180c4-9b96-5181-adb3-242c4afc51d8">
+      <Execution id="fe6850bf-bcfb-4b9b-af02-0ebd8c9f4856" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Login_CaseInsensitiveEmail_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_EmptyPassword_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="db1d10cb-c9e6-92bf-5440-b3b3a02863f7">
+      <Execution id="87530e8d-741b-403b-a45a-db7a55d40b44" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_EmptyPassword_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.LoginRequest_VariousInputs_WorksCorrectly(email: &quot;user@domain.org&quot;, password: &quot;secret&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="d65bd58f-977e-c4ce-6077-c2d3655d3245">
+      <Execution id="f16f3d24-2e12-4728-a022-893d6d7444a6" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="LoginRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_EmptyFirstName_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="34bafbc7-fb19-a710-13da-e691742ae730">
+      <Execution id="6a47fe9e-ca2f-4073-b45e-5cae6fbd7c22" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_EmptyFirstName_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_MultipleUsers_AssignsIncrementalIds" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="8a9c6e33-bbb6-595b-4c75-4bf777155dc0">
+      <Execution id="faffeb33-1b7b-4372-9451-3b7923dceb99" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_MultipleUsers_AssignsIncrementalIds" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_VariousInputs_WorksCorrectly(firstName: &quot;Admin&quot;, lastName: &quot;User&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="b5768c06-b155-b4e8-6e93-81c1bcb733d6">
+      <Execution id="4a28aad4-8d0d-44f7-9ebd-ed06e4bb8d73" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="UpdateProfileRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_NullRequest_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="25d41cb2-ad66-4c07-a13d-35ff1b341037">
+      <Execution id="9e741aba-3b6c-441a-b08f-2798baff949a" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_NullRequest_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_SetProperties_WorksCorrectly" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="fc74a278-a618-0a6d-a674-b5f0646c8c01">
+      <Execution id="ea65a532-1055-40e6-babc-55afcad717b5" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="UpdateProfileRequest_SetProperties_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.Register_InvalidRequest_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="1f683a02-93a5-10e9-6675-a8aa61f55434">
+      <Execution id="dcc3e773-d376-431b-80ab-b7929124d03a" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="Register_InvalidRequest_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.RegisterRequest_VariousInputs_WorksCorrectly(email: &quot;test@example.com&quot;, password: &quot;password123&quot;, firstName: &quot;John&quot;, lastName: &quot;Doe&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="2550cc29-7ac7-4cd6-1bb9-d8eeddac3e22">
+      <Execution id="f2982009-8099-4111-a46c-4c60cf2e52a6" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="RegisterRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.Login_InvalidCredentials_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="8d977e16-e184-3e4b-22d7-880ff7648c1d">
+      <Execution id="2e1010c6-a76f-48df-88bd-da7f08913ea7" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="Login_InvalidCredentials_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.GetAllUsers_EmptyList_ReturnsEmptyArray" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="fcf249cf-8213-8b30-bde7-4cc90e6b3381">
+      <Execution id="d401619e-5db9-49c4-a53c-0348e066d0be" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="GetAllUsers_EmptyList_ReturnsEmptyArray" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.RegisterRequest_SetProperties_WorksCorrectly" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="4ec23aab-966d-d71d-bc28-0f4db9b39fb0">
+      <Execution id="d58ee70c-740d-4d37-a9e9-13d17e4f51bc" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="RegisterRequest_SetProperties_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.User_SetProperties_WorksCorrectly" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="06ac2f45-63f5-136e-d4fc-ea226b4e3571">
+      <Execution id="1bfb0ebd-e2ad-468a-b21a-b43326fd7d49" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="User_SetProperties_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.RegisterRequest_VariousInputs_WorksCorrectly(email: &quot;admin@company.net&quot;, password: &quot;admin123&quot;, firstName: &quot;Admin&quot;, lastName: &quot;User&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="c2f89f0e-6426-9e39-7c55-983fe9b4f66f">
+      <Execution id="6f511e84-3076-4715-9056-d906c4a78662" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="RegisterRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.User_DefaultValues_AreCorrect" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="3a1dfe00-d838-a884-471f-9e95e7a3df10">
+      <Execution id="c6293c19-74b7-475a-80b8-af0e65316fd5" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="User_DefaultValues_AreCorrect" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_DefaultValues_AreCorrect" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="24afb46c-5541-bab3-6fdd-f38b4e3eec9a">
+      <Execution id="6a488075-aca2-43c5-8708-2eff60d992e1" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="UpdateProfileRequest_DefaultValues_AreCorrect" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.Register_ValidRequest_ReturnsSuccess" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="65886fe9-0728-377c-0972-70840b879cc0">
+      <Execution id="a517f982-e44e-451e-a9f1-1a73d5066b2e" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="Register_ValidRequest_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Login_ValidCredentials_ReturnsOkResult" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="2afddba3-2be7-b882-fb42-c5bea2f6a55b">
+      <Execution id="8594f236-5b93-4769-aefa-71249b00d857" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Login_ValidCredentials_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.RegisterRequest_DefaultValues_AreCorrect" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="b93153ab-798b-fed9-906e-7dad852e5b86">
+      <Execution id="9b215376-20d7-4459-850a-a0e5ea4c351e" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="RegisterRequest_DefaultValues_AreCorrect" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_EmptyEmail_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="731bf6dc-2ae4-6fbc-a209-9a4e188d7d3e">
+      <Execution id="31ed6aed-91b7-49e9-8ae9-f76017550897" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_EmptyEmail_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.HealthCheck_ReturnsOkResult" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="6c20981b-8fb1-04a9-7ce4-3a3dc2dddcd3">
+      <Execution id="297d45f6-a218-4404-838b-c3ab91218e4f" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="HealthCheck_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.Login_ValidCredentials_ReturnsSuccess" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="26a6b848-2677-c45a-d9ce-54c24095405c">
+      <Execution id="edb2ae4d-d189-4d3b-8ca5-e34f45115559" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="Login_ValidCredentials_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Login_NullRequest_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="bfdfdae4-9e7b-1cdd-7c44-748eb4c93efe">
+      <Execution id="766b2167-390b-4e70-8d72-bd0a0d354e22" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Login_NullRequest_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_EmptyLastName_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="ec831a30-3189-2ccf-8a0f-32ece83e924e">
+      <Execution id="c1e46d05-3f86-4edb-9fb0-f073b0b92de9" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_EmptyLastName_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.UpdateProfile_EmptyFirstName_UpdatesOnlyLastName" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="cd0c4b77-d167-435c-70ed-cb32bc90a837">
+      <Execution id="cd24bfd1-904c-4474-a6e7-7339e75b769c" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="UpdateProfile_EmptyFirstName_UpdatesOnlyLastName" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.LoginRequest_DefaultValues_AreCorrect" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="fe4576a3-20d2-804f-90d1-c3216283f4cc">
+      <Execution id="fa9d4155-e7ae-439d-8ba7-802c38d29ee3" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="LoginRequest_DefaultValues_AreCorrect" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Login_NonExistentUser_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="60a2d821-d4f3-cc77-9b14-6af4a2ebe6e9">
+      <Execution id="fc2cd9a2-043d-4900-812c-f539f1edfa77" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Login_NonExistentUser_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.UpdateProfile_NullRequest_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="9f4a22b0-e53d-af5d-ce9f-302cb266e81f">
+      <Execution id="bd1b4245-25c2-4bf8-a671-c4f3bec76997" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="UpdateProfile_NullRequest_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.LoginRequest_VariousInputs_WorksCorrectly(email: &quot;admin@company.net&quot;, password: &quot;admin123&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="946dd1cb-e0f0-962e-49f1-5c166d4adb96">
+      <Execution id="59d2db36-42a1-440c-9df8-45bb58bbf487" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="LoginRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.UpdateProfile_ValidRequest_ReturnsSuccess" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="7ff60b14-e3d4-22d7-b372-b2d8f1bc9eb4">
+      <Execution id="d1aaa040-dbf7-43fd-a284-eca936aa1e21" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="UpdateProfile_ValidRequest_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.UpdateProfile_NonExistentUser_ReturnsNotFound" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="7a8d0a09-3cbb-1169-56b3-d6cf4dcbfa86">
+      <Execution id="d5080dd7-1518-4c83-b81c-1ad50d132276" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="UpdateProfile_NonExistentUser_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.HealthCheck_ReturnsCorrectUserCount" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="4c43baae-c7b2-9881-fac5-87acbdbfed7b">
+      <Execution id="4d31a0dd-949d-45f3-a6b1-0dd22acc8982" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="HealthCheck_ReturnsCorrectUserCount" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Login_InvalidCredentials_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="67978293-2af4-9ff3-6a6e-c0d6ba419049">
+      <Execution id="e52903a0-7660-40de-8e9e-f9c6d3c6379a" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Login_InvalidCredentials_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.LoginRequest_VariousInputs_WorksCorrectly(email: &quot;test@example.com&quot;, password: &quot;password123&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="9aeab9da-e652-434f-d148-2e93f662d855">
+      <Execution id="2389479d-84b5-4787-8fd7-24b27aed66f6" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="LoginRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_DuplicateEmail_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="0ebc68e4-1c08-c265-c29c-d7f19e0e5c2d">
+      <Execution id="66dc9a69-8b19-4e74-8961-cdc203264fd9" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_DuplicateEmail_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.Register_DuplicateEmail_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="f724b0dc-c183-2b88-55f6-508d2d012eb6">
+      <Execution id="651209d2-7e21-4768-a43c-abbd74546045" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="Register_DuplicateEmail_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.EndToEndUserFlow_RegisterLoginUpdateProfile_Success" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="b7ff0544-5833-9bd0-40f7-a262c043b00e">
+      <Execution id="0b646c34-918e-4a55-9bbe-e32d76addc90" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="EndToEndUserFlow_RegisterLoginUpdateProfile_Success" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.UserResponse_FromUser_MapsCorrectly" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="eefae636-e025-842b-f4db-ce0fe24c7228">
+      <Execution id="8318ade3-5319-459b-a99a-dd33c2a3a5ea" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="UserResponse_FromUser_MapsCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_ValidRequest_ReturnsOkResult" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="3dfa2ae3-b559-2604-c84f-6f4008b379d7">
+      <Execution id="d01a243b-cfdb-4ed9-9312-d47fd64de787" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_ValidRequest_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.UserResponse_SetProperties_WorksCorrectly" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="2772ac65-d708-a34c-3f7b-79c5ed321ca3">
+      <Execution id="5fc1a9b9-0c29-4884-b0e5-f6c140a40d77" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="UserResponse_SetProperties_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_VariousInputs_WorksCorrectly(firstName: &quot;John&quot;, lastName: &quot;Doe&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="ebf53b28-2450-64ad-c356-5c3a121a3472">
+      <Execution id="eb9e15e3-a6ef-4477-bab7-f3d926dd2933" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="UpdateProfileRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Register_DuplicateEmailCaseInsensitive_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="c9501e7c-44b5-cdc3-2216-0670e2ff49d9">
+      <Execution id="f3a20aef-f0c0-4428-945c-15ee179a1490" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Register_DuplicateEmailCaseInsensitive_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.Login_EmptyEmail_ReturnsBadRequest" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="8543fd21-3aa9-4dd0-70c5-1a6d62268c55">
+      <Execution id="34b07b25-2955-45f3-82dc-1b63abbe4851" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="Login_EmptyEmail_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.RegisterRequest_VariousInputs_WorksCorrectly(email: &quot;user@domain.org&quot;, password: &quot;secret&quot;, firstName: &quot;Jane&quot;, lastName: &quot;Smith&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="050789db-d758-acd6-21f9-a71b1eb7a5f2">
+      <Execution id="00b654c0-62b0-4fce-ac81-386599bc3532" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="RegisterRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerIntegrationTests.HealthCheck_ReturnsSuccess" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="122d19cc-3ca1-eb3f-9f6c-8dd278c27616">
+      <Execution id="c3b88925-5dae-43b7-bcb5-9c8aa7e6dbe7" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerIntegrationTests" name="HealthCheck_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.UserResponse_DefaultValues_AreCorrect" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="a2ac3000-3496-c154-6505-37d5bfe315d0">
+      <Execution id="e03bb114-16f3-4b59-88fc-2c2ea90f2c3a" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="UserResponse_DefaultValues_AreCorrect" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.ModelTests.UpdateProfileRequest_VariousInputs_WorksCorrectly(firstName: &quot;Jane&quot;, lastName: &quot;Smith&quot;)" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="103c1350-5726-a946-1007-ceaa5d533d13">
+      <Execution id="737d5840-d1e9-4c15-a254-db0b31182ad5" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.ModelTests" name="UpdateProfileRequest_VariousInputs_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.UpdateProfile_NonExistentUser_ReturnsNotFound" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="7c1b97f7-5270-f61f-4dad-087bd577c06f">
+      <Execution id="8e5b508a-b17f-45b5-bcd7-1d95f61edd6c" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="UpdateProfile_NonExistentUser_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="LoginUserAPI.Tests.AuthControllerTests.UpdateProfile_ValidRequest_ReturnsOkResult" storage="/workspace/login-user/backend/loginuserapi.tests/bin/debug/net8.0/loginuserapi.tests.dll" id="104fcd3c-dbc8-6fa1-7bb0-50e9e6565be4">
+      <Execution id="744d3f38-3d6f-4048-8ad1-74ff1d50dbc7" />
+      <TestMethod codeBase="/workspace/login-user/backend/LoginUserAPI.Tests/bin/Debug/net8.0/LoginUserAPI.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LoginUserAPI.Tests.AuthControllerTests" name="UpdateProfile_ValidRequest_ReturnsOkResult" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="f724b0dc-c183-2b88-55f6-508d2d012eb6" executionId="651209d2-7e21-4768-a43c-abbd74546045" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="efd2b5e5-d353-3b18-0d16-f0335af8c7c7" executionId="22941ce1-739b-43ea-9350-fcd6381785ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06ac2f45-63f5-136e-d4fc-ea226b4e3571" executionId="1bfb0ebd-e2ad-468a-b21a-b43326fd7d49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfdfdae4-9e7b-1cdd-7c44-748eb4c93efe" executionId="766b2167-390b-4e70-8d72-bd0a0d354e22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60a2d821-d4f3-cc77-9b14-6af4a2ebe6e9" executionId="fc2cd9a2-043d-4900-812c-f539f1edfa77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ec23aab-966d-d71d-bc28-0f4db9b39fb0" executionId="d58ee70c-740d-4d37-a9e9-13d17e4f51bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc74a278-a618-0a6d-a674-b5f0646c8c01" executionId="ea65a532-1055-40e6-babc-55afcad717b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="731bf6dc-2ae4-6fbc-a209-9a4e188d7d3e" executionId="31ed6aed-91b7-49e9-8ae9-f76017550897" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55fe5cd8-4ba4-8ca0-0fde-c411856fd3af" executionId="eeeaafdb-1011-46a4-a24c-e982e04be16d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c20981b-8fb1-04a9-7ce4-3a3dc2dddcd3" executionId="297d45f6-a218-4404-838b-c3ab91218e4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fcf249cf-8213-8b30-bde7-4cc90e6b3381" executionId="d401619e-5db9-49c4-a53c-0348e066d0be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebf53b28-2450-64ad-c356-5c3a121a3472" executionId="eb9e15e3-a6ef-4477-bab7-f3d926dd2933" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f683a02-93a5-10e9-6675-a8aa61f55434" executionId="dcc3e773-d376-431b-80ab-b7929124d03a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34bafbc7-fb19-a710-13da-e691742ae730" executionId="6a47fe9e-ca2f-4073-b45e-5cae6fbd7c22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8d977e16-e184-3e4b-22d7-880ff7648c1d" executionId="2e1010c6-a76f-48df-88bd-da7f08913ea7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db1d10cb-c9e6-92bf-5440-b3b3a02863f7" executionId="87530e8d-741b-403b-a45a-db7a55d40b44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24afb46c-5541-bab3-6fdd-f38b4e3eec9a" executionId="6a488075-aca2-43c5-8708-2eff60d992e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="946dd1cb-e0f0-962e-49f1-5c166d4adb96" executionId="59d2db36-42a1-440c-9df8-45bb58bbf487" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ff60b14-e3d4-22d7-b372-b2d8f1bc9eb4" executionId="d1aaa040-dbf7-43fd-a284-eca936aa1e21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c43baae-c7b2-9881-fac5-87acbdbfed7b" executionId="4d31a0dd-949d-45f3-a6b1-0dd22acc8982" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a1dfe00-d838-a884-471f-9e95e7a3df10" executionId="c6293c19-74b7-475a-80b8-af0e65316fd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="103c1350-5726-a946-1007-ceaa5d533d13" executionId="737d5840-d1e9-4c15-a254-db0b31182ad5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2f89f0e-6426-9e39-7c55-983fe9b4f66f" executionId="6f511e84-3076-4715-9056-d906c4a78662" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2550cc29-7ac7-4cd6-1bb9-d8eeddac3e22" executionId="f2982009-8099-4111-a46c-4c60cf2e52a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2772ac65-d708-a34c-3f7b-79c5ed321ca3" executionId="5fc1a9b9-0c29-4884-b0e5-f6c140a40d77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="122d19cc-3ca1-eb3f-9f6c-8dd278c27616" executionId="c3b88925-5dae-43b7-bcb5-9c8aa7e6dbe7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9aeab9da-e652-434f-d148-2e93f662d855" executionId="2389479d-84b5-4787-8fd7-24b27aed66f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3dfa2ae3-b559-2604-c84f-6f4008b379d7" executionId="d01a243b-cfdb-4ed9-9312-d47fd64de787" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a8d0a09-3cbb-1169-56b3-d6cf4dcbfa86" executionId="d5080dd7-1518-4c83-b81c-1ad50d132276" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15a180c4-9b96-5181-adb3-242c4afc51d8" executionId="fe6850bf-bcfb-4b9b-af02-0ebd8c9f4856" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2afddba3-2be7-b882-fb42-c5bea2f6a55b" executionId="8594f236-5b93-4769-aefa-71249b00d857" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c9501e7c-44b5-cdc3-2216-0670e2ff49d9" executionId="f3a20aef-f0c0-4428-945c-15ee179a1490" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f4a22b0-e53d-af5d-ce9f-302cb266e81f" executionId="bd1b4245-25c2-4bf8-a671-c4f3bec76997" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="050789db-d758-acd6-21f9-a71b1eb7a5f2" executionId="00b654c0-62b0-4fce-ac81-386599bc3532" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ebc68e4-1c08-c265-c29c-d7f19e0e5c2d" executionId="66dc9a69-8b19-4e74-8961-cdc203264fd9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b93153ab-798b-fed9-906e-7dad852e5b86" executionId="9b215376-20d7-4459-850a-a0e5ea4c351e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25d41cb2-ad66-4c07-a13d-35ff1b341037" executionId="9e741aba-3b6c-441a-b08f-2798baff949a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="104fcd3c-dbc8-6fa1-7bb0-50e9e6565be4" executionId="744d3f38-3d6f-4048-8ad1-74ff1d50dbc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2ac3000-3496-c154-6505-37d5bfe315d0" executionId="e03bb114-16f3-4b59-88fc-2c2ea90f2c3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eefae636-e025-842b-f4db-ce0fe24c7228" executionId="8318ade3-5319-459b-a99a-dd33c2a3a5ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65886fe9-0728-377c-0972-70840b879cc0" executionId="a517f982-e44e-451e-a9f1-1a73d5066b2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe4576a3-20d2-804f-90d1-c3216283f4cc" executionId="fa9d4155-e7ae-439d-8ba7-802c38d29ee3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8543fd21-3aa9-4dd0-70c5-1a6d62268c55" executionId="34b07b25-2955-45f3-82dc-1b63abbe4851" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd0c4b77-d167-435c-70ed-cb32bc90a837" executionId="cd24bfd1-904c-4474-a6e7-7339e75b769c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a9c6e33-bbb6-595b-4c75-4bf777155dc0" executionId="faffeb33-1b7b-4372-9451-3b7923dceb99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26a6b848-2677-c45a-d9ce-54c24095405c" executionId="edb2ae4d-d189-4d3b-8ca5-e34f45115559" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b8755a0-d4b6-2c4e-afba-943b8094fc2c" executionId="93010a3b-bbea-4bcd-9975-2540057d6fe7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec831a30-3189-2ccf-8a0f-32ece83e924e" executionId="c1e46d05-3f86-4edb-9fb0-f073b0b92de9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67978293-2af4-9ff3-6a6e-c0d6ba419049" executionId="e52903a0-7660-40de-8e9e-f9c6d3c6379a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1221ca2-1b8f-f11a-4614-b47fd795039a" executionId="df6240c6-f026-4fec-b447-b7b08ed07184" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7ff0544-5833-9bd0-40f7-a262c043b00e" executionId="0b646c34-918e-4a55-9bbe-e32d76addc90" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d65bd58f-977e-c4ce-6077-c2d3655d3245" executionId="f16f3d24-2e12-4728-a022-893d6d7444a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5768c06-b155-b4e8-6e93-81c1bcb733d6" executionId="4a28aad4-8d0d-44f7-9ebd-ed06e4bb8d73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c1b97f7-5270-f61f-4dad-087bd577c06f" executionId="8e5b508a-b17f-45b5-bcd7-1d95f61edd6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="54" executed="54" passed="54" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.18)
+[xUnit.net 00:00:00.06]   Discovering: LoginUserAPI.Tests
+[xUnit.net 00:00:00.09]   Discovered:  LoginUserAPI.Tests
+[xUnit.net 00:00:00.09]   Starting:    LoginUserAPI.Tests
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: LoginUserAPI.Controllers.AuthController[0]
+      Registration attempt for email: 
+warn: LoginUserAPI.Controllers.AuthController[0]
+      Registration failed: Missing email or password
+info: LoginUserAPI.Controllers.AuthController[0]
+      Profile update attempt for user ID: 999
+warn: LoginUserAPI.Controllers.AuthController[0]
+      Profile update failed: User not found with ID 999
+info: LoginUserAPI.Controllers.AuthController[0]
+      Registration attempt for email: update@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      User registered successfully with ID: 3
+info: LoginUserAPI.Controllers.AuthController[0]
+      Profile update attempt for user ID: 1
+info: LoginUserAPI.Controllers.AuthController[0]
+      Profile updated successfully for user ID: 1
+info: LoginUserAPI.Controllers.AuthController[0]
+      Registration attempt for email: duplicate@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      User registered successfully with ID: 4
+info: LoginUserAPI.Controllers.AuthController[0]
+      Registration attempt for email: duplicate@example.com
+warn: LoginUserAPI.Controllers.AuthController[0]
+      Registration failed: User already exists with email duplicate@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      Registration attempt for email: integration@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      User registered successfully with ID: 5
+info: LoginUserAPI.Controllers.AuthController[0]
+      Registration attempt for email: login@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      User registered successfully with ID: 6
+info: LoginUserAPI.Controllers.AuthController[0]
+      Login attempt for email: login@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      User logged in successfully: 6
+info: LoginUserAPI.Controllers.AuthController[0]
+      Login attempt for email: nonexistent@example.com
+warn: LoginUserAPI.Controllers.AuthController[0]
+      Login failed: Invalid credentials for nonexistent@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      Registration attempt for email: endtoend@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      User registered successfully with ID: 7
+info: LoginUserAPI.Controllers.AuthController[0]
+      Login attempt for email: endtoend@example.com
+info: LoginUserAPI.Controllers.AuthController[0]
+      User logged in successfully: 7
+info: LoginUserAPI.Controllers.AuthController[0]
+      Profile update attempt for user ID: 1
+info: LoginUserAPI.Controllers.AuthController[0]
+      Profile updated successfully for user ID: 1
+[xUnit.net 00:00:00.57]   Finished:    LoginUserAPI.Tests
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="cursor" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="cursor/coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>

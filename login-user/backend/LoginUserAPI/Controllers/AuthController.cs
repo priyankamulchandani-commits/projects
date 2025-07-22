@@ -81,29 +81,49 @@ namespace LoginUserAPI.Controllers
         [HttpPost("login")]
         public ActionResult Login([FromBody] LoginRequest request)
         {
-            if (string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+            try
             {
-                return BadRequest(new { message = "Email and password are required" });
+                _logger.LogInformation("Login attempt for email: {Email}", request?.Email ?? "null");
+
+                if (request == null)
+                {
+                    _logger.LogWarning("Login request is null");
+                    return BadRequest(new { message = "Invalid request data" });
+                }
+
+                if (string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+                {
+                    _logger.LogWarning("Login failed: Missing email or password");
+                    return BadRequest(new { message = "Email and password are required" });
+                }
+
+                var user = _users.FirstOrDefault(u => 
+                    u.Email.ToLower() == request.Email.ToLower() && 
+                    u.Password == request.Password);
+
+                if (user == null)
+                {
+                    _logger.LogWarning("Login failed: Invalid credentials for {Email}", request.Email);
+                    return BadRequest(new { message = "Invalid email or password" });
+                }
+
+                _logger.LogInformation("User logged in successfully: {UserId}", user.Id);
+
+                var response = new UserResponse
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName
+                };
+
+                return Ok(new { message = "Login successful", user = response });
             }
-
-            var user = _users.FirstOrDefault(u => 
-                u.Email.ToLower() == request.Email.ToLower() && 
-                u.Password == request.Password);
-
-            if (user == null)
+            catch (Exception ex)
             {
-                return BadRequest(new { message = "Invalid email or password" });
+                _logger.LogError(ex, "Error during user login");
+                return StatusCode(500, new { message = "Internal server error during login" });
             }
-
-            var response = new UserResponse
-            {
-                Id = user.Id,
-                Email = user.Email,
-                FirstName = user.FirstName,
-                LastName = user.LastName
-            };
-
-            return Ok(new { message = "Login successful", user = response });
         }
 
         [HttpGet("users")]
@@ -123,27 +143,46 @@ namespace LoginUserAPI.Controllers
         [HttpPut("profile/{id}")]
         public ActionResult UpdateProfile(int id, [FromBody] UpdateProfileRequest request)
         {
-            var user = _users.FirstOrDefault(u => u.Id == id);
-            if (user == null)
+            try
             {
-                return NotFound(new { message = "User not found" });
+                _logger.LogInformation("Profile update attempt for user ID: {UserId}", id);
+
+                if (request == null)
+                {
+                    _logger.LogWarning("Update profile request is null");
+                    return BadRequest(new { message = "Invalid request data" });
+                }
+
+                var user = _users.FirstOrDefault(u => u.Id == id);
+                if (user == null)
+                {
+                    _logger.LogWarning("Profile update failed: User not found with ID {UserId}", id);
+                    return NotFound(new { message = "User not found" });
+                }
+
+                if (!string.IsNullOrEmpty(request.FirstName))
+                    user.FirstName = request.FirstName;
+                
+                if (!string.IsNullOrEmpty(request.LastName))
+                    user.LastName = request.LastName;
+
+                _logger.LogInformation("Profile updated successfully for user ID: {UserId}", id);
+
+                var response = new UserResponse
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName
+                };
+
+                return Ok(new { message = "Profile updated successfully", user = response });
             }
-
-            if (!string.IsNullOrEmpty(request.FirstName))
-                user.FirstName = request.FirstName;
-            
-            if (!string.IsNullOrEmpty(request.LastName))
-                user.LastName = request.LastName;
-
-            var response = new UserResponse
+            catch (Exception ex)
             {
-                Id = user.Id,
-                Email = user.Email,
-                FirstName = user.FirstName,
-                LastName = user.LastName
-            };
-
-            return Ok(new { message = "Profile updated successfully", user = response });
+                _logger.LogError(ex, "Error updating user profile");
+                return StatusCode(500, new { message = "Internal server error during profile update" });
+            }
         }
 
         // Add a health check endpoint
