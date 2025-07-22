@@ -1,26 +1,25 @@
-# Login User Application
+# Simple Login User Application
 
-A full-stack authentication application built with .NET 8 Web API backend and React TypeScript frontend. This application provides complete user authentication functionality including login, signup, profile management, and logout with JWT authentication.
+A straightforward full-stack authentication application built with .NET 8 Web API backend and React TypeScript frontend. This application provides simple user authentication functionality including login, signup, and profile management without JWT tokens or password hashing complexity.
 
 ## Features
 
 - **User Registration**: Create new user accounts with email, password, and personal information
-- **User Login**: Secure authentication with JWT tokens
+- **User Login**: Simple authentication with plain text passwords
 - **Profile Management**: View and edit user profile information
 - **Protected Routes**: Route protection based on authentication status
 - **Context API**: React Context for global authentication state management
 - **Modern UI**: Beautiful and responsive design with CSS animations
-- **Form Validation**: Client-side and server-side validation
-- **Password Security**: BCrypt password hashing
-- **CORS Support**: Cross-origin resource sharing configuration
+- **In-Memory Storage**: Simple data storage (resets on restart)
+- **No Complexity**: No JWT tokens, no password hashing - perfect for learning!
 
 ## Technology Stack
 
 ### Backend (.NET 8 Web API)
 - ASP.NET Core 8.0
 - Entity Framework Core (In-Memory Database)
-- JWT Authentication
-- BCrypt for password hashing
+- Simple authentication (no JWT)
+- Plain text passwords (no hashing)
 - CORS middleware
 - RESTful API design
 
@@ -39,28 +38,24 @@ login-user/
 ├── backend/
 │   └── LoginUserAPI/
 │       ├── Controllers/
-│       │   └── AuthController.cs
+│       │   └── SimpleAuthController.cs
 │       ├── Data/
 │       │   └── AppDbContext.cs
-│       ├── DTOs/
-│       │   └── AuthDTOs.cs
 │       ├── Models/
 │       │   └── User.cs
-│       ├── Services/
-│       │   └── JwtService.cs
 │       ├── Program.cs
 │       └── appsettings.json
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── Login.tsx
-│   │   │   ├── Register.tsx
-│   │   │   ├── Profile.tsx
-│   │   │   ├── ProtectedRoute.tsx
+│   │   │   ├── SimpleLogin.tsx
+│   │   │   ├── SimpleRegister.tsx
+│   │   │   ├── SimpleProfile.tsx
+│   │   │   ├── SimpleProtectedRoute.tsx
 │   │   │   ├── Auth.css
 │   │   │   └── Profile.css
 │   │   ├── contexts/
-│   │   │   └── AuthContext.tsx
+│   │   │   └── SimpleAuthContext.tsx
 │   │   ├── App.tsx
 │   │   └── App.css
 │   └── package.json
@@ -71,10 +66,10 @@ login-user/
 
 ### Authentication Endpoints
 
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/profile` - Get user profile (protected)
-- `PUT /api/auth/profile` - Update user profile (protected)
+- `POST /api/simpleauth/register` - Register a new user
+- `POST /api/simpleauth/login` - Login user
+- `GET /api/simpleauth/users` - Get all users (for testing)
+- `PUT /api/simpleauth/profile/{id}` - Update user profile
 
 ## Getting Started
 
@@ -98,7 +93,7 @@ login-user/
 
 3. Run the backend server:
    ```bash
-   dotnet run
+   dotnet run --urls="http://localhost:5000"
    ```
 
    The API will be available at `http://localhost:5000`
@@ -131,74 +126,51 @@ login-user/
 
 ## Authentication Flow
 
-1. User registers or logs in
-2. Backend validates credentials and returns JWT token
-3. Frontend stores token in localStorage
-4. Token is included in subsequent API requests
-5. Protected routes check for valid authentication
-6. Logout clears the token and redirects to login
+1. User registers or logs in with plain text credentials
+2. Backend stores user data in memory (no encryption)
+3. Frontend stores user object in context state
+4. Protected routes check for user presence in context
+5. Logout clears the user from context state
 
-## Security Features
+## ⚠️ Important Notes
 
-- Password hashing with BCrypt
-- JWT token-based authentication
-- Protected API endpoints
-- Client-side route protection
-- Input validation and sanitization
-- CORS configuration for security
+- **Not for production use** - This is a learning/demonstration application
+- **No password security** - Passwords are stored in plain text
+- **In-memory storage** - All data resets when the server restarts
+- **No session persistence** - Authentication state is lost on page refresh
+- **No input validation** - Minimal validation for simplicity
+
+## Why Simple?
+
+This application is designed for:
+- **Learning purposes** - Understanding authentication concepts without complexity
+- **Rapid prototyping** - Quick setup for testing ideas
+- **Educational demos** - Teaching authentication flows
+- **Development practice** - Focus on frontend/backend integration
+
+## Security Features (Intentionally Missing)
+
+For educational purposes, this app does NOT include:
+- Password hashing (BCrypt, etc.)
+- JWT token authentication
+- Session management
+- Input sanitization
+- HTTPS enforcement
+- Rate limiting
+- Password complexity requirements
 
 ## Development Notes
 
-- The application uses an in-memory database for simplicity
-- JWT tokens expire after 7 days (configurable)
-- All API responses include proper HTTP status codes
-- Error handling is implemented on both client and server
-- The UI is fully responsive and mobile-friendly
+- Uses Entity Framework In-Memory database
+- All user data is lost when the server restarts
+- API responses include full user objects
+- No authentication middleware required
+- CORS is configured for localhost:3000
 
 ## License
 
 This project is open source and available under the MIT License.
-## 🔄 Simple Authentication Version (No JWT, No Hashing)
 
-This project also includes a simplified version without JWT tokens and password hashing for learning purposes.
+---
 
-### Simple Version Features
-
-- ✅ **No JWT tokens** - Direct user object storage
-- ✅ **No password hashing** - Plain text passwords  
-- ✅ **In-memory storage** - Data resets on restart
-- ✅ **Simple API endpoints** - Easy to understand
-- ✅ **Same UI/UX** - Consistent user experience
-
-### Simple API Endpoints
-
-- `POST /api/simpleauth/register` - Register user (plain text password)
-- `POST /api/simpleauth/login` - Login user (plain text comparison)
-- `GET /api/simpleauth/users` - Get all users (for testing)
-- `PUT /api/simpleauth/profile/{id}` - Update user profile
-
-### How to Use Simple Version
-
-1. **Backend**: The `SimpleAuthController.cs` is already included
-2. **Frontend**: Use the simple components:
-   - Replace `AuthContext` with `SimpleAuthContext`
-   - Use `App-Simple.tsx` instead of `App.tsx`
-   - Components: `SimpleLogin.tsx`, `SimpleRegister.tsx`, `SimpleProfile.tsx`
-
-### Switch to Simple Version
-
-```bash
-# In frontend directory
-cp src/App-Simple.tsx src/App.tsx
-# Then restart the React app
-```
-
-### ⚠️ Important Notes for Simple Version
-
-- **Not for production** - No security features
-- **Data not persistent** - Resets on server restart  
-- **Plain text passwords** - Visible to anyone with access
-- **No authentication tokens** - Basic session management
-
-This simple version is perfect for learning, prototyping, or demonstrations where security isn't a concern!
-
+**Perfect for learning authentication concepts without the complexity of production-level security!** 🎓

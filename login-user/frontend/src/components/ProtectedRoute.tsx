@@ -2,18 +2,18 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 
-interface ProtectedRouteProps {
+interface SimpleProtectedRouteProps {
   children: React.ReactNode;
 }
 
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
-  const { user, token } = useAuth();
+const SimpleProtectedRoute: React.FC<SimpleProtectedRouteProps> = ({ children }) => {
+  const { user } = useAuth();
   
-  if (!token || !user) {
+  if (!user) {
     return <Navigate to="/login" replace />;
   }
   
   return <>{children}</>;
 };
 
-export default ProtectedRoute;
+export default SimpleProtectedRoute;

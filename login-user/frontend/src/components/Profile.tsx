@@ -2,34 +2,14 @@ import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import './Profile.css';
 
-const Profile: React.FC = () => {
+const SimpleProfile: React.FC = () => {
   const { user, updateProfile, logout, loading, error } = useAuth();
   const [isEditing, setIsEditing] = useState(false);
   const [firstName, setFirstName] = useState(user?.firstName || '');
   const [lastName, setLastName] = useState(user?.lastName || '');
-  const [validationErrors, setValidationErrors] = useState<{[key: string]: string}>({});
   const [successMessage, setSuccessMessage] = useState('');
 
-  const validateForm = () => {
-    const errors: {[key: string]: string} = {};
-    
-    if (!firstName.trim()) {
-      errors.firstName = 'First name is required';
-    }
-    
-    if (!lastName.trim()) {
-      errors.lastName = 'Last name is required';
-    }
-    
-    setValidationErrors(errors);
-    return Object.keys(errors).length === 0;
-  };
-
   const handleSave = async () => {
-    if (!validateForm()) {
-      return;
-    }
-
     try {
       await updateProfile(firstName, lastName);
       setIsEditing(false);
@@ -44,15 +24,6 @@ const Profile: React.FC = () => {
     setFirstName(user?.firstName || '');
     setLastName(user?.lastName || '');
     setIsEditing(false);
-    setValidationErrors({});
-  };
-
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
   };
 
   if (!user) {
@@ -69,7 +40,7 @@ const Profile: React.FC = () => {
           <div className="profile-info">
             <h1>{user.firstName} {user.lastName}</h1>
             <p className="profile-email">{user.email}</p>
-            <p className="profile-date">Member since {formatDate(user.createdAt)}</p>
+            <p className="profile-date">Simple Auth - No JWT!</p>
           </div>
           <button onClick={logout} className="logout-button">
             Logout
@@ -105,11 +76,8 @@ const Profile: React.FC = () => {
                       type="text"
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
-                      className={validationErrors.firstName ? 'error' : ''}
+                      required
                     />
-                    {validationErrors.firstName && (
-                      <span className="error-message">{validationErrors.firstName}</span>
-                    )}
                   </div>
 
                   <div className="form-group">
@@ -119,11 +87,8 @@ const Profile: React.FC = () => {
                       type="text"
                       value={lastName}
                       onChange={(e) => setLastName(e.target.value)}
-                      className={validationErrors.lastName ? 'error' : ''}
+                      required
                     />
-                    {validationErrors.lastName && (
-                      <span className="error-message">{validationErrors.lastName}</span>
-                    )}
                   </div>
                 </div>
 
@@ -154,6 +119,10 @@ const Profile: React.FC = () => {
                   <label>Email</label>
                   <span>{user.email}</span>
                 </div>
+                <div className="detail-item">
+                  <label>User ID</label>
+                  <span>#{user.id}</span>
+                </div>
               </div>
             )}
           </div>
@@ -163,4 +132,4 @@ const Profile: React.FC = () => {
   );
 };
 
-export default Profile;
+export default SimpleProfile;

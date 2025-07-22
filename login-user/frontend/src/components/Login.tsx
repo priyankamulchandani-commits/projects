@@ -3,37 +3,15 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import './Auth.css';
 
-const Login: React.FC = () => {
+const SimpleLogin: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [validationErrors, setValidationErrors] = useState<{[key: string]: string}>({});
   const { login, loading, error } = useAuth();
   const navigate = useNavigate();
-
-  const validateForm = () => {
-    const errors: {[key: string]: string} = {};
-    
-    if (!email) {
-      errors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = 'Email is invalid';
-    }
-    
-    if (!password) {
-      errors.password = 'Password is required';
-    }
-    
-    setValidationErrors(errors);
-    return Object.keys(errors).length === 0;
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!validateForm()) {
-      return;
-    }
-
     try {
       await login(email, password);
       navigate('/profile');
@@ -46,8 +24,8 @@ const Login: React.FC = () => {
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-header">
-          <h1>Welcome Back</h1>
-          <p>Sign in to your account</p>
+          <h1>Simple Login</h1>
+          <p>No JWT, No Hashing - Just Simple!</p>
         </div>
         
         <form onSubmit={handleSubmit} className="auth-form">
@@ -58,10 +36,9 @@ const Login: React.FC = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className={validationErrors.email ? 'error' : ''}
               placeholder="Enter your email"
+              required
             />
-            {validationErrors.email && <span className="error-message">{validationErrors.email}</span>}
           </div>
 
           <div className="form-group">
@@ -71,10 +48,9 @@ const Login: React.FC = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className={validationErrors.password ? 'error' : ''}
               placeholder="Enter your password"
+              required
             />
-            {validationErrors.password && <span className="error-message">{validationErrors.password}</span>}
           </div>
 
           {error && <div className="error-message global-error">{error}</div>}
@@ -97,4 +73,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default SimpleLogin;

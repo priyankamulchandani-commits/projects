@@ -3,56 +3,17 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import './Auth.css';
 
-const Register: React.FC = () => {
+const SimpleRegister: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [validationErrors, setValidationErrors] = useState<{[key: string]: string}>({});
   const { register, loading, error } = useAuth();
   const navigate = useNavigate();
-
-  const validateForm = () => {
-    const errors: {[key: string]: string} = {};
-    
-    if (!firstName.trim()) {
-      errors.firstName = 'First name is required';
-    }
-    
-    if (!lastName.trim()) {
-      errors.lastName = 'Last name is required';
-    }
-    
-    if (!email) {
-      errors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = 'Email is invalid';
-    }
-    
-    if (!password) {
-      errors.password = 'Password is required';
-    } else if (password.length < 6) {
-      errors.password = 'Password must be at least 6 characters';
-    }
-    
-    if (!confirmPassword) {
-      errors.confirmPassword = 'Please confirm your password';
-    } else if (password !== confirmPassword) {
-      errors.confirmPassword = 'Passwords do not match';
-    }
-    
-    setValidationErrors(errors);
-    return Object.keys(errors).length === 0;
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!validateForm()) {
-      return;
-    }
-
     try {
       await register(email, password, firstName, lastName);
       navigate('/profile');
@@ -66,7 +27,7 @@ const Register: React.FC = () => {
       <div className="auth-card">
         <div className="auth-header">
           <h1>Create Account</h1>
-          <p>Sign up to get started</p>
+          <p>Simple Registration - No Complexity!</p>
         </div>
         
         <form onSubmit={handleSubmit} className="auth-form">
@@ -78,10 +39,9 @@ const Register: React.FC = () => {
                 type="text"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                className={validationErrors.firstName ? 'error' : ''}
                 placeholder="First name"
+                required
               />
-              {validationErrors.firstName && <span className="error-message">{validationErrors.firstName}</span>}
             </div>
 
             <div className="form-group">
@@ -91,10 +51,9 @@ const Register: React.FC = () => {
                 type="text"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                className={validationErrors.lastName ? 'error' : ''}
                 placeholder="Last name"
+                required
               />
-              {validationErrors.lastName && <span className="error-message">{validationErrors.lastName}</span>}
             </div>
           </div>
 
@@ -105,10 +64,9 @@ const Register: React.FC = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className={validationErrors.email ? 'error' : ''}
               placeholder="Enter your email"
+              required
             />
-            {validationErrors.email && <span className="error-message">{validationErrors.email}</span>}
           </div>
 
           <div className="form-group">
@@ -118,23 +76,9 @@ const Register: React.FC = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className={validationErrors.password ? 'error' : ''}
               placeholder="Enter your password"
+              required
             />
-            {validationErrors.password && <span className="error-message">{validationErrors.password}</span>}
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="confirmPassword">Confirm Password</label>
-            <input
-              id="confirmPassword"
-              type="password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              className={validationErrors.confirmPassword ? 'error' : ''}
-              placeholder="Confirm your password"
-            />
-            {validationErrors.confirmPassword && <span className="error-message">{validationErrors.confirmPassword}</span>}
           </div>
 
           {error && <div className="error-message global-error">{error}</div>}
@@ -157,4 +101,4 @@ const Register: React.FC = () => {
   );
 };
 
-export default Register;
+export default SimpleRegister;
